@@ -2,19 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Neysite</title>
-    <link rel="stylesheet" href="styles.css" media="screen" title="no title">
+    <title>Ney-site</title>
+    <link rel="stylesheet" href="./css/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="./css/styles.css" type="text/css" />
 </head>
-<body class="container">
-  <h1>Ney Congjuico</h1>
-  <p>Hi, my name is Ney. :D</p>
-  <p><button type="button" name="button">Hello</button></p>
-
-  <a target="_blank" href="http://purple.com"><div id="purple">Purple</div></a>
-
-  <h2>This is the title of our blog</h2>
-  <div class="blog">
-
-  </div>
+<body>
+    <!-- start master header -->
+    <header class="masthead">
+        <nav class="clearfix">
+            <div id="desktop-nav">
+                <h2 class="logo">Ney-chan-sama</h2>
+                <ul>
+                    <li>Home</li>
+                    <li><a class="about" href="#about">About</a></li>
+                    <li>Portfolio</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div id="mobile-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Portfolio</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </nav>
+        <h1 class="title">Hello I am Ney :D</h1>
+    </header>
+    <!-- end master header -->
+    
+    <div class="i-am-here-to-get-scrolled"></div>
+    
+    <!-- start about section -->
+    <div id="about">
+        <h2>You got scrolled</h2>
+    </div>
+    <!-- end about section -->
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./javascript/app.js"></script>
 </body>
 </html>

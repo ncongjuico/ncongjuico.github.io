@@ -1,0 +1,111 @@
+/*************
+ General STYLING
+*************/
+
+body {
+    height: 5000px;
+    color: red;
+    background-color: blue;
+}
+
+/*************
+ NAV STYLING
+*************/
+
+#desktop-nav .logo{
+    float: left;
+}
+
+#desktop-nav ul {
+    float: right;
+}
+
+#desktop-nav ul li {
+    float: left;
+    list-style: none;
+    margin: 10px;
+}
+
+#desktop-nav ul li a {
+    color: red;
+    text-decoration: none;
+}
+
+#mobile-nav {
+    display: none;    
+}
+
+#mobile-nav ul {
+    display: none;
+}
+
+/*************
+ Hamburger STYLING
+*************/
+
+#mobile-nav span {
+    display: block;
+    width: 25px;
+    height: 5px;
+    margin: 3px;
+    background-color: green;
+}
+
+/*************
+ clearfix STYLING
+ 
+ in general, what this does is use the :after pseudo selector to insert a blank table
+ at the end of your floats. This then clears both sides so that you can restore the normal 
+ flow of your html document
+*************/
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*************
+ Master header STYLING
+*************/
+
+.masthead {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../hot-dog.jpg');
+    background-size: cover;
+}
+
+.title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0px 0px 2em white;
+    transition: all 1000ms;
+}
+
+.title:hover {
+    transform: rotate(10deg);
+    transition: all 1000ms;
+}
+
+/*************
+ Empty div for scrolling STYLING
+*************/
+
+.i-am-here-to-get-scrolled {
+    height: 3000px;
+}
+
+/*************
+ media queries STYLING
+*************/
+
+@media (max-width: 500px) {
+    #desktop-nav {
+        display: none;
+    }
+    #mobile-nav {
+        display: block;
+    }
+}
