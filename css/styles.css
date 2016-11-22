@@ -4,8 +4,8 @@
 
 body {
     height: 5000px;
-    color: red;
-    background-color: blue;
+    color: white;
+    background-color: #F1EDEE;
 }
 
 /*************
@@ -27,12 +27,16 @@ body {
 }
 
 #desktop-nav ul li a {
-    color: red;
+    color: white;
     text-decoration: none;
 }
 
+#desktop-nav ul li a:hover {
+    opacity: 0.5;
+}
+
 #mobile-nav {
-    display: none;    
+    display: none;
 }
 
 #mobile-nav ul {
@@ -53,9 +57,9 @@ body {
 
 /*************
  clearfix STYLING
- 
+
  in general, what this does is use the :after pseudo selector to insert a blank table
- at the end of your floats. This then clears both sides so that you can restore the normal 
+ at the end of your floats. This then clears both sides so that you can restore the normal
  flow of your html document
 *************/
 
@@ -71,7 +75,7 @@ body {
 
 .masthead {
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../hot-dog.jpg');
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/clouds.jpeg');
     background-size: cover;
 }
 
@@ -79,22 +83,117 @@ body {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
-    text-shadow: 0px 0px 2em white;
-    transition: all 1000ms;
+    transform: translate(-50%, -50%);*/
+    text-shadow: 0px 0px 0em black;
 }
 
-.title:hover {
-    transform: rotate(10deg);
-    transition: all 1000ms;
+.title img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);*/
+    text-shadow: 0px 0px 0em black;
 }
 
 /*************
- Empty div for scrolling STYLING
+About STYLING
 *************/
+.about-section{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/flour.jpg');
+    background-size: cover;
+}
 
-.i-am-here-to-get-scrolled {
-    height: 3000px;
+.about-section img {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    box-shadow: 2px 1px 2px black;
+    left: 50%;
+    top: 110vh;
+    border-radius: 50%;
+}
+
+.about-section h2{
+    position: absolute;
+    left: 1%;
+    top: 100vh;
+}
+
+/*but I dont want the text to be affected by opacity D:*/
+.about-section p{
+    position: absolute;
+    width: 600px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    left: 30%;
+    top: 130vh;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.about-section p:hover{
+    position: absolute;
+    width: 600px;
+    padding: 20px;
+    left: 30%;
+    top: 130vh;
+    background-color: black;
+    opacity: 0.8;
+    transition: 100ms
+}
+
+/*************
+Portfolio STYLING
+*************/
+.portfolio-section{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/computer.jpeg');
+    background-size: cover;
+}
+
+.portfolio-section h2{
+    position: absolute;
+    left: 1%;
+    top: 200vh;
+}
+
+#portfolio-contents{
+    position: absolute;
+    top: 230vh;
+    margin: auto 35%;
+    color: black;
+    width: 500px;
+    background-color: white;
+    opacity: 0.5;
+    padding: 20px;
+}
+
+#portfolio-contents img{
+    position: relative;
+    margin: auto 35%;
+}
+
+#portfolio-contents img:hover{
+    position: relative;
+    margin: auto 35%;
+}
+
+/*************
+Portfolio STYLING
+*************/
+.contact-section{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/phone.jpg');
+    background-size: cover;
+}
+
+.contact-section h2{
+    position: absolute;
+    left: 1%;
+    top: 300vh;
 }
 
 /*************
